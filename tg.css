@@ -1,0 +1,125 @@
+*{box-sizing:inherit}
+:root{
+    /****  colors  ***/
+    --color-primary: chocolate;
+    --color-secondary-dark: #632b03;
+    --color-white: white;
+
+}
+
+.u-center-text{
+    text-align: center;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    /* font-size: 1.6rem; */
+}
+
+.tribute-header{
+    padding: 2rem;
+    background-color: var(--color-primary);
+}
+.header-tribute__image{
+    max-width: 15rem;
+    max-height: 15rem;
+    border-radius: 50%;
+    background-color:var(--color-primary);  
+    border: .5rem solid var(--color-white);
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 0 3rem 4rem var(--color-secondary-dark);
+    
+}
+.response{
+    max-width: 600px;
+    width: fit-content;
+    margin: auto;
+}
+.image{
+    border-radius: 50%;
+    max-width: 15rem;
+    max-height: 15rem;
+    clip-path: circle(50% at 50% 50%);
+    margin: .5rem;
+}
+
+.header-tribute__image img{
+    width: 100%;
+    transform: scale(1.1);
+}
+.tribute-header__text{
+    /* width: calc(100% - 20rem); */
+    display: inline-block;
+}
+.tribute-header__text h1{
+    text-transform: uppercase;
+    color:var(--color-white) ;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: -webkit-pictograph;
+    text-shadow: 0 3rem 4rem var(--color-secondary-dark);
+
+}
+.tribute-header__text h1 .title{
+    color: var(--color-secondary-dark);
+    font-family: fantasy;
+}
+.tribute-header__text h2{
+    font-size: inherit;
+    position: relative;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+
+}
+
+section ul li{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #717171;
+}
+.tribute-header__text h2::before{
+   content:"|";
+   font-weight: 900;
+   color: var(--color-white);
+  
+   position: absolute;
+   right: 0;
+   width: 0%;
+   height: 100%;
+   animation: move 6s steps(56) forwards;
+   display: none;
+}
+@keyframes move{
+from{
+    width: 100%;
+    display: block;
+    background-color: var(--color-primary);
+} 
+to{
+    display: block;
+    background-color: var(--color-primary);
+}   
+}
+
+
+@media (max-width: 300px){
+    body{
+        text-align: center;
+    }
+}
