@@ -31,6 +31,9 @@ ul{
     background-color: cornflowerblue;
     padding: 10px;
     display: inline-block;
+    width:150px;  
+   font-size: optional;
+
 }
 .container{
     height: 70vh;
