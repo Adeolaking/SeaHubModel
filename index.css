@@ -37,7 +37,7 @@ ul{
 }
 .container{
     height: 70vh;
-    background-image: url(media/pic2-min.jpg);
+    background-image: url(./media/pic2-min.jpg);
     background-size: cover;
     background-position-y: center;
     background-repeat: no-repeat;
@@ -77,6 +77,7 @@ a{
     color: #4e4c4c;
     line-height: 3rem;
     margin-bottom: 3rem;
+    
     /* letter-spacing: .1px */
 }
 .activity-cont{
