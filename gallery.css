@@ -1,0 +1,30 @@
+.cont{
+    background-color: darkcyan;color: black;
+    border-radius: 2rem;
+    padding:20px;
+    border-style: solid;
+
+}
+header{
+    display: flex;
+    justify-content:flex-end;
+    padding: 10px;
+    font-size: larger;
+
+}
+ul{
+    display: flex;
+    list-style: none;
+    width: 250px;
+    justify-content: space-around;
+    border-radius: 30px;
+    text-align: center;
+}
+.btn{
+    border-radius: 20px;
+    background-color: cornflowerblue;
+    padding: 10px;
+    display: inline-block;
+ 
+  
+}
